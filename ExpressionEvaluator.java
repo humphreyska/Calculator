@@ -5,8 +5,8 @@ import java.util.regex.Pattern;
 
 /**
  * 
- * @author ???
- * @version ???
+ * @author Kaitlyn Humphreys
+ * @version 1.0
  * 
  */
 public class ExpressionEvaluator
