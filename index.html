@@ -1,1 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>documentation p1</title>
+<meta charset="utf-8">
+<style>
+body {
+  margin: 0;
+}
 
+nav{
+float: left;
+  width: 20%;
+  padding: 30px;
+}
+
+nav ul {
+  font-family: verdana;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 20%;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+h1{
+  font-size: 20px;
+  font-family: verdana;
+  font-weight: normal;
+}
+
+h2{
+  font-size: 15px;
+  font-family: verdana;
+  font-weight: normal;
+}
+
+h3{
+  font-size: 13px;
+  font-family: verdana;
+  font-weight: normal;
+  padding-left: 30px;
+  padding-bottom: 5px
+}
+
+h4{
+  font-size: 12px;
+  font-family: verdana;
+  font-weight: normal; 
+  padding-left: 60px;
+  padding-bottom: 5px
+}
+
+h5{
+  font-size: 8px;
+  font-family: verdana;
+  font-weight: normal;
+  text-align: center; 
+  padding-left: 90px;
+  padding-bottom: 5px
+}
+
+p{
+  font-size: 30px;
+  font-family: verdana;
+}
+
+section{
+ padding-bottom: 50px
+}
+
+
+</style>
+</head>
+<body>
+
+
+<nav>
+	<ul>
+		<li><a href="#first">How to Install Java</a></li>
+		<li><a href="#second">How to Insall Eclipse</a></li>
+		<li><a href="#third">Download Calculator</a></li>
+		<li><a href="#fourth">Run Calculator</a></li>
+	</ul>
+</nav>
+
+<div style="margin-left:25%;padding:1px 16px;height:1000px;">
+<section>
+	<p>Working Calculator</p>
+	<h2>Co-authored by Kaitlyn Humphreys and Juliana Luczynski</h2>
+</section>
+<section>
+	<h1 id = "first">How to Install Java:</h1>
+		<h2>Step 1: Go to Java SE - Download site: </h2>
+			<h3><a href="url">https://www.oracle.com/technetwork/java/javase/downloads/index.html</a></h3>
+		<h2>Step 2: Under Java Platform Standard Edition click download Oracle JDK</h2> <img src="pictures/1A.png" alt="Java Oracle" width="609" height="299">
+		<h2>Step 3: Choose the JDK for your operating system (Windows, Mac, Linux)</h2> <img src="pictures/1B.png" alt="Operating Syctem" width="558" height="270">
+		<h2>Step 4: Accept licensing agreement and download</h2>
+</section>
+
+<section>
+    <h1 id = "second">How to Install Eclipse:</h1>
+		<h2>Step 1: Make sure you have already installed java</h2>
+		<h2>Step 2: Go to Eclipse IDE for Java Developers</h2>
+			<h3><a href="url">https://www.eclipse.org/downloads/packages/release/2019-06/r/eclipse-ide-java-developers</a></h3>
+		<h2>Step 3: Choose the download link for your platform (Windows, Mac, Linux)</h2>  <img src="pictures/2A.png" alt="choose link" width="575" height="274">
+			<h3>Make sure it is still the Java Developers version.</h3>	
+			<h3>Window Users:</h3>
+				<h4>1. Unzip the download file into a directory of your choice</h4>
+			<h3>Mac Users:</h3>
+				<h4>1.	Double click the download image (DMG file)</h4>
+				<h4>2.	Follow the on-screen instructions to download</h4>
+				<h4>3.	Eclipse will be installed under /Applications/eclipse directory</h4>
+			<h3>Linux:</h3>
+				<h4>1.	Install eclipse under /usr/local</h4> <img src="pictures/2B.png" alt="linux" width="521" height="317">
+				<h4>2.	To run: open /usr/local/eclipse click on the “Eclipse icon” or to start a terminal enter “eclipse”</h4>
+			<h3>If the download doesn't work, under more downloads Luna or Oxygen are good substitutes.</h3> <img src="pictures/2C.png" alt="Oxygen" width="496" height="321">
+</section>
+
+    <h1 id = "third">Download Calculator:</h1>
+   	<h2>Step1: Github link <a href="url">https://github.com/humphreyska/Working-Calculator</a></h2>
+    	<h3>Click “src” to view individual files</h3>
+	<h2>Step 2: Select Working-Calculator.zip</h2> <img src="pictures/3A.png" alt="calculator" width="517" height="314">
+	<h2>Step 3: Click “view raw” to download</h2> <img src="pictures/3B.png" alt="view raw" width="526" height="241">
+   	<h2>Step 4: Unzip the file</h2>
+	<h2>Step 5: Run Eclipse</h2>
+	<h2>Step 6: Click the “File” tab</h2>
+	<h2>Step 7: Click “Open projects from file system”</h2> <img src="pictures/3C.png" alt="open Project" width="309" height="477">
+	<h2>Step 8: Select your root directory, browse, choose the directory your stored Calculator-master</h2>
+	<h2>Step 9: Select all and finish</h2> <img src="pictures/3D.png" alt="select" width="444" height="273">
+	<h2>Step 10: You have successfully downloaded the Working-Calculator program</h2>  <img src="pictures/3E.png" alt="files" width="445" height="353">
+
+<section>
+	<h1 id = "fourth">Run Calculator:</h1>
+		<h2>Step 1: Run Eclipse</h2>
+		<h2>Step 2: Right click Working Calculator</h2> 
+			<h3>Select “run as”, Select “java application”</h3> <img src="pictures/4A.png" alt="run calculator" width="552" height="386">
+		<h2>Step 3: Make window bigger to view entire application</h2> <img src="pictures/4B.png" alt="window" width="451" height="425">
+		<h2>Step 4: Type expresion into text box</h2>
+			<h3>For addition use “ + ” </h3>
+			<h3>For subtraction use “ - ”</h3>
+			<h3>For multiplication use “ * “</h3>
+			<h3>For division use “ / ”</h3>
+			<h3>For parenthesis use “ ( “ and “ ) ”</h3>
+			<h3>For numbers type any negative, positive, or decimal numbers</h3>
+		<h2>Step 5: Click calculate to evaluate the expression</h2>
+			<h3>The result will appear below text box</h3>
+		<h2>Step 6: Click clear to reset text box</h2> 
+			<h3>Enter a new expression</h3>
+</section>
+	<footer>
+	<h5> licensing </h5>
+	</footer>
+	
+</body>
+</html>
