@@ -26,6 +26,7 @@ nav ul {
   overflow: auto;
 }
 
+
 li a {
   display: block;
   color: #000;
@@ -72,7 +73,7 @@ h4{
 }
 
 h5{
-  font-size: 8px;
+  font-size: 10px;
   font-family: verdana;
   font-weight: normal;
   text-align: center; 
@@ -89,6 +90,32 @@ section{
  padding-bottom: 50px
 }
 
+.collapsible {
+  font-family: verdana;
+  font-size: 13px;
+  padding-top: 40px;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+  font-size: 13px;
+  color: white;
+}
+
+.content {
+  padding: 0 18px;
+  font-size: 13px;
+  font-family: verdana;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
 
 </style>
 </head>
@@ -97,8 +124,11 @@ section{
 
 <nav>
 	<ul>
-		<li><a href="#first">How </a></li>
+		<li><a href="#first">How to Install Java</a></li>
 		<li><a href="#second">How to Insall Eclipse</a></li>
+ 		    <li><a href="#secA">Window Users</a></li> 		
+		    <li><a href="#secB">Mac Users</a></li>
+		    <li><a href="#secC">Linux Users</a></li>			
 		<li><a href="#third">Download Calculator</a></li>
 		<li><a href="#fourth">Run Calculator</a></li>
 	</ul>
@@ -112,7 +142,7 @@ section{
 </section>
 <section>
 	<h1 id = "first">How to Install Java:</h1>
-		<h2>Step 1: Go to <a href="https://www.oracle.com/technetwork/java/javase/downloads/index.html"> Java SE - Download site</a></h2>
+		<h2>Step 1: Go to <a href="https://www.oracle.com/technetwork/java/javase/downloads/index.html/"> Java SE</a></h2>
 		<h2>Step 2: Under Java Platform Standard Edition click download Oracle JDK</h2> <img src="pictures/1A.png" alt="Java Oracle" width="609" height="299">
 		<h2>Step 3: Choose the JDK for your operating system (Windows, Mac, Linux)</h2> <img src="pictures/1B.png" alt="Operating Syctem" width="558" height="270">
 		<h2>Step 4: Accept licensing agreement and download</h2>
@@ -123,17 +153,26 @@ section{
 		<h2>Step 1: Make sure you have already installed java</h2>
 		<h2>Step 2: Go to <a href="https://www.eclipse.org/downloads/packages/release/2019-06/r/eclipse-ide-java-developers/"> Eclipse</a> IDE for Java Developers</h2>
 		<h2>Step 3: Choose the download link for your platform (Windows, Mac, Linux)</h2>  <img src="pictures/2A.png" alt="choose link" width="575" height="274">
-			<h3>Make sure it is still the Java Developers version.</h3>	
-			<h3>Window Users:</h3>
-				<h4>1. Unzip the download file into a directory of your choice</h4>
-			<h3>Mac Users:</h3>
-				<h4>1.	Double click the download image (DMG file)</h4>
+			<button id = "secA" class="collapsible">Window Users:</button>
+			<div class="content">
+		 		<h4>1. Unzip the download file into a directory of your choice</h4>
+			</div>
+			<button id = "secB" class="collapsible">Mac Users:</button>
+			<div class="content">
+			 	<h4>1.	Double click the download image (DMG file)</h4>
 				<h4>2.	Follow the on-screen instructions to download</h4>
 				<h4>3.	Eclipse will be installed under /Applications/eclipse directory</h4>
-			<h3>Linux:</h3>
-				<h4>1.	Install eclipse under /usr/local</h4> <img src="pictures/2B.png" alt="linux" width="521" height="317">
+			</div>
+			<button  id = "secC" class="collapsible">Linux Users:</button>
+			<div class="content">
+				<h4>1.	Install eclipse under /usr/local</h4> <img src="pictures/2B.png" alt="linux" width="521" height="317" hspace="60">
 				<h4>2.	To run: open /usr/local/eclipse click on the “Eclipse icon” or to start a terminal enter “eclipse”</h4>
-			<h3>If the download doesn't work, under more downloads Luna or Oxygen are good substitutes.</h3> <img src="pictures/2C.png" alt="Oxygen" width="496" height="321">
+			</div>
+			<button class="collapsible">Having trouble?</button>
+			<div class="content">
+				<h3>If the download doesn't work, under more downloads Luna or Oxygen are good substitutes.</h3> 
+				<h3>Make sure it is still the Java Developers version.</h3><img src="pictures/2C.png" alt="Oxygen" width="496" height="321" hspace="30">
+			</div>
 </section>
 
     <h1 id = "third">Download Calculator:</h1>
@@ -154,9 +193,9 @@ section{
 	<h1 id = "fourth">Run Calculator:</h1>
 		<h2>Step 1: Run Eclipse</h2>
 		<h2>Step 2: Right click Working Calculator</h2> 
-			<h3>Select “run as”, Select “java application”</h3> <img src="pictures/4A.png" alt="run calculator" width="552" height="386">
+			<h3>Select “run as”, Select “java application”</h3> <img src="pictures/4A.png" alt="run calculator" width="552" height="386"hspace="30">
 		<h2>Step 3: Make window bigger to view entire application</h2> <img src="pictures/4B.png" alt="window" width="451" height="425">
-		<h2>Step 4: Type expression into text box</h2>
+		<h2>Step 4: Type expresion into text box</h2>
 			<h3>For addition use “ + ” </h3>
 			<h3>For subtraction use “ - ”</h3>
 			<h3>For multiplication use “ * “</h3>
@@ -169,8 +208,25 @@ section{
 			<h3>Enter a new expression</h3>
 </section>
 	<footer>
-	<h5> licensing </h5>
+	<h5>MIT License - Copyright (c) [2019] [Kaitlyn Humphreys & Juliana Luczynski]</h5>
 	</footer>
+	
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
 	
 </body>
 </html>
